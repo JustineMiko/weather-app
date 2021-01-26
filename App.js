@@ -15,41 +15,13 @@ export default function App() {
     })
   }, []);
 
-  const dayTemp = weather.current;
-  const allDays = weather.daily;
-
 
   return (
     <SafeAreaView style={styles.container}>
-      {/* <DayWeather data={dayTemp} style={styles.header} /> */}
-      
-      <SafeAreaView style={styles.header}>
-      <Text style={styles.headerText}>Tuesday January 25 2021</Text>
-      <Text style={styles.headerText}>19°</Text>
-      <Text style={styles.headerText}>12°</Text>
-      <Image></Image>
-      <Text style={styles.headerText}>Cloud</Text>
-      </SafeAreaView>
-
+      <DayWeather data={weather} style={styles.header} />
       <ScrollView style={styles.weekSection}>
-        <SafeAreaView style={styles.weekSection}>
-        <Image></Image>
-        <Text style={styles.weekText}>Tuesday January 25 2021</Text>
-        <Text style={styles.weekText}>16°</Text>
-        <Text style={styles.weekText}>Rain</Text>
-        </SafeAreaView>
-        <SafeAreaView style={styles.weekSection}>
-        <Image></Image>
-        <Text style={styles.weekText}>Tuesday January 25 2021</Text>
-        <Text style={styles.weekText}>16°</Text>
-        <Text style={styles.weekText}>Rain</Text>
-        </SafeAreaView>
-
+        <AllDaysWeather data={weather} style={styles.weekSection} />
       </ScrollView>
-
-      {/* <AllDaysWeather data={allDays} style={styles.weekSection} /> */}
-
-
     </SafeAreaView>
 
 
