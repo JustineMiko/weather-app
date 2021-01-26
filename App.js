@@ -1,8 +1,8 @@
 import AllDaysWeather from './components/AllDaysWeather';
 import axios from 'axios';
 import DayWeather from './components/DayWeather';
-import React, {useState, UseEffect } from 'react';
-import { FlatList, SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { FlatList, Image, SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
 
 export default function App() {
 
@@ -21,8 +21,35 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <DayWeather data={dayTemp} style={styles.header} />
-      <AllDaysWeather data={allDays} style={styles.weekSection} />
+      {/* <DayWeather data={dayTemp} style={styles.header} /> */}
+      
+      <SafeAreaView style={styles.header}>
+      <Text style={styles.headerText}>Tuesday January 25 2021</Text>
+      <Text style={styles.headerText}>19°</Text>
+      <Text style={styles.headerText}>12°</Text>
+      <Image></Image>
+      <Text style={styles.headerText}>Cloud</Text>
+      </SafeAreaView>
+
+      <ScrollView style={styles.weekSection}>
+        <SafeAreaView style={styles.weekSection}>
+        <Image></Image>
+        <Text style={styles.weekText}>Tuesday January 25 2021</Text>
+        <Text style={styles.weekText}>16°</Text>
+        <Text style={styles.weekText}>Rain</Text>
+        </SafeAreaView>
+        <SafeAreaView style={styles.weekSection}>
+        <Image></Image>
+        <Text style={styles.weekText}>Tuesday January 25 2021</Text>
+        <Text style={styles.weekText}>16°</Text>
+        <Text style={styles.weekText}>Rain</Text>
+        </SafeAreaView>
+
+      </ScrollView>
+
+      {/* <AllDaysWeather data={allDays} style={styles.weekSection} /> */}
+
+
     </SafeAreaView>
 
 
@@ -39,10 +66,31 @@ const styles = StyleSheet.create({
 
   header: {
     backgroundColor: 'blue',
+    width: 380,
+    height: 300,
+
+
+  },
+
+  headerText: {
+    color: 'white',
+    textAlign: 'center',
+    margin: 20,
+    fontWeight: 'bold',
+
   },
 
   weekSection: {
     backgroundColor: 'white',
+    width: 380,
+    borderColor: 'grey',
+    borderStyle: 'solid',
+    borderWidth: 1,
+
+  },
+
+  weekText: {
+    fontWeight: 'bold',
   }
 
 });
