@@ -1,14 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
+import { FlatList, ScrollView, Text} from 'react-native';
 
-const AllDaysWeather() {
+const AllDaysWeather(allDays) {
     
+    const sixteenDays = allDays.daily.temp;
 
     return (
-        <div>
-            
-        </div>
+        <ScrollView>
+            <FlatList>
+                {sixteenDays}
+            </FlatList>
+        </ScrollView>
     )
 }
 

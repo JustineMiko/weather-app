@@ -3,14 +3,17 @@ import React from 'react';
 import { SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
 
 
-const DayWeather() {
+const DayWeather(dayTemp) {
     
-    const dayTemp = setWeather(res.data.current.weather[0].temp);
-    
+    const degrees = dayTemp.current.temp;
+
+
     return (
-        <div>
-            
-        </div>
+        <SafeAreaView>
+            <Text>
+            Température : {degrees} 
+            </Text>
+        </SafeAreaView>
     )
 }
 
