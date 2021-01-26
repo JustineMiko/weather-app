@@ -1,9 +1,9 @@
 import React from 'react';
 import { FlatList, ScrollView, Text} from 'react-native';
 
-const AllDaysWeather(allDays) {
+const AllDaysWeather = ({allDays}) => {
     
-    const sixteenDays = allDays.daily.temp;
+    const sixteenDays = allDays.temp;
 
     return (
         <ScrollView>
@@ -14,4 +14,5 @@ const AllDaysWeather(allDays) {
     )
 }
 
-export default AllDaysWeather;
+export default AllDaysWeather
+

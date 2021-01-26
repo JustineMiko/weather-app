@@ -1,8 +1,7 @@
 import AllDaysWeather from './components/AllDaysWeather';
 import axios from 'axios';
 import DayWeather from './components/DayWeather';
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+import React, {useState, UseEffect } from 'react';
 import { FlatList, SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
 
 export default function App() {
@@ -22,7 +21,6 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar style="auto" />
       <DayWeather data={dayTemp} style={styles.header} />
       <AllDaysWeather data={allDays} style={styles.weekSection} />
     </SafeAreaView>
@@ -35,7 +33,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
 
   },
 

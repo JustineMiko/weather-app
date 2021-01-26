@@ -1,11 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
 
 
-const DayWeather(dayTemp) {
+const DayWeather = ({dayTemp}) => {
     
-    const degrees = dayTemp.current.temp;
+    const degrees = dayTemp.temp;
 
 
     return (
@@ -17,4 +16,5 @@ const DayWeather(dayTemp) {
     )
 }
 
-export default DayWeather;
+export default DayWeather
+
