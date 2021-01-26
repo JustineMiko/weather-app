@@ -21,7 +21,7 @@ const AllDaysWeather = ({weather}) => {
     const dayTwoWeatherType = dayTwo.weather[0].description;
     const dayTwoIcon = dayTwo.weather[0].icon;
     
-    // Jour :
+    // Jour 3 :
 
     const dayThree = weather.daily[2];
     const dayThreedate = dayThree.dt;
@@ -29,8 +29,43 @@ const AllDaysWeather = ({weather}) => {
     const dayThreeFeels = dayThree.feels_like.day;
     const dayThreeWeatherType = dayThree.weather[0].description;
     const dayThreeIcon = dayThree.weather[0].icon;
-    
 
+    // Jour 4 :
+
+    const dayFour = weather.daily[3];
+    const dayFourdate = dayFour.dt;
+    const dayFourTemp = dayFour.temp.day;
+    const dayFourFeels = dayFour.feels_like.day;
+    const dayFourWeatherType = dayFour.weather[0].description;
+    const dayFourIcon = dayFour.weather[0].icon;
+
+     // Jour 5 :
+
+    const dayFive = weather.daily[4];
+    const dayFivedate = dayFive.dt;
+    const dayFiveTemp = dayFive.temp.day;
+    const dayFiveFeels = dayFive.feels_like.day;
+    const dayFiveWeatherType = dayFive.weather[0].description;
+    const dayFiveIcon = dayFive.weather[0].icon;
+    
+    // Jour 6 :
+
+    const daySix = weather.daily[5];
+    const daySixdate = daySix.dt;
+    const daySixTemp = daySix.temp.day;
+    const daySixFeels = daySix.feels_like.day;
+    const daySixWeatherType = daySix.weather[0].description;
+    const daySixIcon = daySix.weather[0].icon;
+    
+    // Jour 7 :
+
+    const daySeven = weather.daily[6];
+    const daySevendate = daySeven.dt;
+    const daySevenTemp = daySeven.temp.day;
+    const daySevenFeels = daySeven.feels_like.day;
+    const daySevenWeatherType = daySeven.weather[0].description;
+    const daySevenIcon = daySeven.weather[0].icon;
+    
 
     return (
         <ScrollView>
