@@ -11,7 +11,7 @@ export default function App() {
   console.log(weather);
 
   useEffect(() => {
-    axios.get('http://api.openweathermap.org/data/2.5/onecall?lat=50.633333&lon=3.066667&exclude=minutely,hourly,alerts&&appid=6e2c8f258ad2ee898b5f95e8ee374d29')
+    axios.get('http://api.openweathermap.org/data/2.5/onecall?lat=50.633333&lon=3.066667&units=metric&lang=fr&exclude=minutely,hourly,alerts&&appid=6e2c8f258ad2ee898b5f95e8ee374d29')
     .then(res => {
       setWeather(res.data);
     })

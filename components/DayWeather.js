@@ -5,24 +5,21 @@ import { Image, SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-na
 const DayWeather = ({weather}) => {
     
     const dayTemp = weather.current;
-    const today = dayTemp.dt;
+    const today = Date(dayTemp.dt * 1000);
     const degrees = dayTemp.temp;
     const feelDegrees = dayTemp.feels_like;
     const weatherType = dayTemp.weather[0].description;
-    const weatherIcon = dayTemp.weather[0].icon;
+    const weatherIcon = 'http://openweathermap.org/img/wn/"+dayTemp.weather[0].icon+"@2x.png';
 
-    // const date = Date();
-    // let todayDate = Date.now();
-    // document.getElementById('now').innerHTML = todayDate;
 
     return (
         <SafeAreaView>
             <SafeAreaView style={styles.header}>
-            <Text id='now' style={styles.headerText}>Tuesday January 25 2021 : {today}</Text>
+            <Text style={styles.headerText}>{today}</Text>
             <Text style={styles.headerText}>19° : {degrees}</Text>
             <Text style={styles.headerText}>12° :{feelDegrees}</Text>
             <View><Image source={{ uri: weatherIcon }} style={styles.images} /></View>
-            <Text style={styles.headerText}>Cloudy : {weatherType}</Text>
+            <Text style={styles.headerText}>{weatherType}</Text>
             </SafeAreaView>
         </SafeAreaView>
     )
