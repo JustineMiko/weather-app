@@ -71,49 +71,49 @@ const AllDaysWeather = ({weather}) => {
         <SafeAreaView style={styles.weekSection}>
         <View><Image source={{ uri: dayOneIcon }} style={styles.images} /></View>
         <Text style={styles.weekText}>{dayOneDate}</Text>
-        <Text style={styles.weekText}>16° / {dayOneTemp}</Text>
+        <Text style={styles.weekText}>{dayOneTemp}</Text>
         <Text style={styles.weekText}>{dayOneWeatherType}</Text>
         </SafeAreaView>
        
        <SafeAreaView style={styles.weekSection}>
         <View><Image source={{ uri: dayTwoIcon }} style={styles.images} /></View>
         <Text style={styles.weekText}>{dayTwoDate}</Text>
-        <Text style={styles.weekText}>16° / {dayTwoTemp}</Text>
+        <Text style={styles.weekText}>{dayTwoTemp}</Text>
         <Text style={styles.weekText}>{dayTwoWeatherType}</Text>
         </SafeAreaView> 
 
         <SafeAreaView style={styles.weekSection}>
         <View><Image source={{ uri: dayThreeIcon }} style={styles.images} /></View>
         <Text style={styles.weekText}>{dayThreeDate}</Text>
-        <Text style={styles.weekText}>16° / {dayThreeTemp}</Text>
+        <Text style={styles.weekText}>{dayThreeTemp}</Text>
         <Text style={styles.weekText}>{dayThreeWeatherType}</Text>
         </SafeAreaView>
 
         <SafeAreaView style={styles.weekSection}>
         <View><Image source={{ uri: dayFourIcon }} style={styles.images} /></View>
         <Text style={styles.weekText}>{dayFourDate}</Text>
-        <Text style={styles.weekText}>16° / {dayFourTemp}</Text>
+        <Text style={styles.weekText}>{dayFourTemp}</Text>
         <Text style={styles.weekText}>{dayFourWeatherType}</Text>
         </SafeAreaView>
 
         <SafeAreaView style={styles.weekSection}>
         <View><Image source={{ uri: dayFiveIcon }} style={styles.images} /></View>
         <Text style={styles.weekText}>{dayFiveDate}</Text>
-        <Text style={styles.weekText}>16° / {dayFiveTemp}</Text>
+        <Text style={styles.weekText}>{dayFiveTemp}</Text>
         <Text style={styles.weekText}>{dayFiveWeatherType}</Text>
         </SafeAreaView>
 
         <SafeAreaView style={styles.weekSection}>
         <View><Image source={{ uri: daySixIcon }} style={styles.images} /></View>
         <Text style={styles.weekText}>{daySixDate}</Text>
-        <Text style={styles.weekText}>16° / {daySixTemp}</Text>
+        <Text style={styles.weekText}>{daySixTemp}</Text>
         <Text style={styles.weekText}>{daySixWeatherType}</Text>
         </SafeAreaView>
 
         <SafeAreaView style={styles.weekSection}>
         <View><Image source={{ uri: daySevenIcon }} style={styles.images} /></View>
         <Text style={styles.weekText}>{daySevenDate}</Text>
-        <Text style={styles.weekText}>16°/ {daySevenTemp}</Text>
+        <Text style={styles.weekText}>{daySevenTemp}</Text>
         <Text style={styles.weekText}>{daySevenWeatherType}</Text>
         </SafeAreaView>
 

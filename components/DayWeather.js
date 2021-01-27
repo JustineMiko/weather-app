@@ -16,8 +16,8 @@ const DayWeather = ({weather}) => {
         <SafeAreaView>
             <SafeAreaView style={styles.header}>
             <Text style={styles.headerText}>{today}</Text>
-            <Text style={styles.headerText}>19° : {degrees}</Text>
-            <Text style={styles.headerText}>12° :{feelDegrees}</Text>
+            <Text style={styles.headerText}>{degrees}</Text>
+            <Text style={styles.headerText}>{feelDegrees}</Text>
             <View><Image source={{ uri: weatherIcon }} style={styles.images} /></View>
             <Text style={styles.headerText}>{weatherType}</Text>
             </SafeAreaView>
