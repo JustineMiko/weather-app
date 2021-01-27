@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { FlatList, Image, SafeAreaView, ScrollView, Text, StyleSheet} from 'react-native';
+import { FlatList, Image, SafeAreaView, ScrollView, Text, StyleSheet, View } from 'react-native';
 
 const AllDaysWeather = ({weather}) => {
     
@@ -70,49 +70,49 @@ const AllDaysWeather = ({weather}) => {
     return (
         <ScrollView>
         <SafeAreaView style={styles.weekSection}>
-        <View><Image style={styles.image}>{dayOneIcon}</Image></View>
+        <View><Image source={{ uri: dayOneIcon }} style={styles.images} /></View>
         <Text style={styles.weekText}>Tuesday January 25 2021 / {dayOneDate}</Text>
         <Text style={styles.weekText}>16° / {dayOneTemp}</Text>
         <Text style={styles.weekText}>Rain / {dayOneWeatherType}</Text>
         </SafeAreaView>
        
-        <SafeAreaView style={styles.weekSection}>
-        <View><Image style={styles.image}>{dayTwoIcon}</Image></View>
+       <SafeAreaView style={styles.weekSection}>
+        <View><Image source={{ uri: dayTwoIcon }} style={styles.images} /></View>
         <Text style={styles.weekText}>Tuesday January 25 2021 / {dayTwoDate}</Text>
         <Text style={styles.weekText}>16° / {dayTwoTemp}</Text>
-        <Text style={styles.weekText}>Rain</Text>
-        </SafeAreaView>
-        
-        <SafeAreaView style={styles.weekSection}>
-        <View><Image style={styles.image}>{dayThreeIcon}</Image></View>
-        <Text style={styles.weekText}>Tuesday January 25 2021 / {dayTwoDate}</Text>
-        <Text style={styles.weekText}>16°/ {dayTwoTemp}</Text>
         <Text style={styles.weekText}>Rain / {dayTwoWeatherType}</Text>
+        </SafeAreaView> 
+
+        <SafeAreaView style={styles.weekSection}>
+        <View><Image source={{ uri: dayThreeIcon }} style={styles.images} /></View>
+        <Text style={styles.weekText}>Tuesday January 25 2021 / {dayThreeDate}</Text>
+        <Text style={styles.weekText}>16° / {dayThreeTemp}</Text>
+        <Text style={styles.weekText}>{dayThreeWeatherType}</Text>
         </SafeAreaView>
 
         <SafeAreaView style={styles.weekSection}>
-        <View><Image style={styles.image}>{dayFourIcon}</Image></View>
-        <Text style={styles.weekText}>Tuesday January 25 2021 / {dayForDate}</Text>
+        <View><Image source={{ uri: dayFourIcon }} style={styles.images} /></View>
+        <Text style={styles.weekText}>Tuesday January 25 2021 / {dayFourDate}</Text>
         <Text style={styles.weekText}>16° / {dayFourTemp}</Text>
         <Text style={styles.weekText}>Rain / {dayFourWeatherType}</Text>
         </SafeAreaView>
 
         <SafeAreaView style={styles.weekSection}>
-        <View><Image style={styles.image}>{dayFiveIcon}</Image></View>
+        <View><Image source={{ uri: dayFiveIcon }} style={styles.images} /></View>
         <Text style={styles.weekText}>Tuesday January 25 2021 / {dayFiveDate}</Text>
         <Text style={styles.weekText}>16° / {dayFiveTemp}</Text>
         <Text style={styles.weekText}>Rain / {dayFiveWeatherType}</Text>
         </SafeAreaView>
 
         <SafeAreaView style={styles.weekSection}>
-        <View><Image style={styles.image}>{daySixIcon}</Image></View>
+        <View><Image source={{ uri: daySixIcon }} style={styles.images} /></View>
         <Text style={styles.weekText}>Tuesday January 25 2021 / {daySixDate}</Text>
         <Text style={styles.weekText}>16° / {daySixTemp}</Text>
         <Text style={styles.weekText}>Rain / {daySixWeatherType}</Text>
         </SafeAreaView>
 
         <SafeAreaView style={styles.weekSection}>
-        <View><Image style={styles.image}>{daySevenIcon}</Image></View>
+        <View><Image source={{ uri: daySevenIcon }} style={styles.images} /></View>
         <Text style={styles.weekText}>Tuesday January 25 2021 / {daySevenDate}</Text>
         <Text style={styles.weekText}>16°/ {daySevenTemp}</Text>
         <Text style={styles.weekText}>Rain / {daySevenWeatherType}</Text>

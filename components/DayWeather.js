@@ -21,7 +21,7 @@ const DayWeather = ({weather}) => {
             <Text id='now' style={styles.headerText}>Tuesday January 25 2021 : {today}</Text>
             <Text style={styles.headerText}>19° : {degrees}</Text>
             <Text style={styles.headerText}>12° :{feelDegrees}</Text>
-            <View><Image style={styles.image}>{weatherIcon}</Image></View>
+            <View><Image source={{ uri: weatherIcon }} style={styles.images} /></View>
             <Text style={styles.headerText}>Cloudy : {weatherType}</Text>
             </SafeAreaView>
         </SafeAreaView>

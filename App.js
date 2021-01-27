@@ -22,15 +22,15 @@ export default function App() {
     return (
       <View>
       { Object.keys(weather).length !== 0 ?
-        <safeAreaView style={styles.container}>
+        <SafeAreaView style={styles.container}>
           <DayWeather weather={weather} style={styles.header} />
           <ScrollView style={styles.weekSection}>
             <AllDaysWeather weather={weather} style={styles.weekSection} />
           </ScrollView>
-        </safeAreaView>
-      : <safeAreaView>
+        </SafeAreaView>
+      : <SafeAreaView>
           <AppLoading />
-        </safeAreaView> }
+        </SafeAreaView> }
       </View>
     );
   }
