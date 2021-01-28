@@ -74,8 +74,5 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 
-  image: {
-    position: 'absolute',
-  }
 
 });

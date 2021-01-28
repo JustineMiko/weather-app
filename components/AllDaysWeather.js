@@ -67,51 +67,52 @@ const AllDaysWeather = ({weather}) => {
     
 
     return (
+
         <ScrollView>
         <SafeAreaView style={styles.weekSection}>
-        <View><Image source={{ uri: dayOneIcon }} style={styles.images} /></View>
+        <View><Image source={{ uri : `http://openweathermap.org/img/wn/${dayOneIcon}@2x.png` }} style={styles.icon} /></View>
         <Text style={styles.weekText}>{dayOneDate}</Text>
         <Text style={styles.weekText}>{dayOneTemp}</Text>
         <Text style={styles.weekText}>{dayOneWeatherType}</Text>
         </SafeAreaView>
        
        <SafeAreaView style={styles.weekSection}>
-        <View><Image source={{ uri: dayTwoIcon }} style={styles.images} /></View>
+        <View><Image source={{ uri : `http://openweathermap.org/img/wn/${dayTwoIcon}@2x.png` }} style={styles.icon}  /></View>
         <Text style={styles.weekText}>{dayTwoDate}</Text>
         <Text style={styles.weekText}>{dayTwoTemp}</Text>
         <Text style={styles.weekText}>{dayTwoWeatherType}</Text>
         </SafeAreaView> 
 
         <SafeAreaView style={styles.weekSection}>
-        <View><Image source={{ uri: dayThreeIcon }} style={styles.images} /></View>
+        <View><Image source={{ uri : `http://openweathermap.org/img/wn/${dayThreeIcon}@2x.png` }} style={styles.icon}  /></View>
         <Text style={styles.weekText}>{dayThreeDate}</Text>
         <Text style={styles.weekText}>{dayThreeTemp}</Text>
         <Text style={styles.weekText}>{dayThreeWeatherType}</Text>
         </SafeAreaView>
 
         <SafeAreaView style={styles.weekSection}>
-        <View><Image source={{ uri: dayFourIcon }} style={styles.images} /></View>
+        <View><Image source={{ uri : `http://openweathermap.org/img/wn/${dayFourIcon}@2x.png` }} style={styles.icon}  /></View>
         <Text style={styles.weekText}>{dayFourDate}</Text>
         <Text style={styles.weekText}>{dayFourTemp}</Text>
         <Text style={styles.weekText}>{dayFourWeatherType}</Text>
         </SafeAreaView>
 
         <SafeAreaView style={styles.weekSection}>
-        <View><Image source={{ uri: dayFiveIcon }} style={styles.images} /></View>
+        <View><Image source={{ uri : `http://openweathermap.org/img/wn/${dayFiveIcon}@2x.png` }} style={styles.icon}  /></View>
         <Text style={styles.weekText}>{dayFiveDate}</Text>
         <Text style={styles.weekText}>{dayFiveTemp}</Text>
         <Text style={styles.weekText}>{dayFiveWeatherType}</Text>
         </SafeAreaView>
 
         <SafeAreaView style={styles.weekSection}>
-        <View><Image source={{ uri: daySixIcon }} style={styles.images} /></View>
+        <View><Image source={{ uri : `http://openweathermap.org/img/wn/${daySixIcon}@2x.png` }} style={styles.icon}  /></View>
         <Text style={styles.weekText}>{daySixDate}</Text>
         <Text style={styles.weekText}>{daySixTemp}</Text>
         <Text style={styles.weekText}>{daySixWeatherType}</Text>
         </SafeAreaView>
 
         <SafeAreaView style={styles.weekSection}>
-        <View><Image source={{ uri: daySevenIcon }} style={styles.images} /></View>
+        <View><Image source={{ uri : `http://openweathermap.org/img/wn/${daySevenIcon}@2x.png` }} style={styles.icon} /></View>
         <Text style={styles.weekText}>{daySevenDate}</Text>
         <Text style={styles.weekText}>{daySevenTemp}</Text>
         <Text style={styles.weekText}>{daySevenWeatherType}</Text>
@@ -162,9 +163,10 @@ const styles = StyleSheet.create({
       fontWeight: 'bold',
     },
 
-    image: {
-        position: 'absolute',
-      }
+    icon: {
+      width: 100,
+      height: 50,
+    }
   
   });
   

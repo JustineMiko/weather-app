@@ -9,7 +9,7 @@ const DayWeather = ({weather}) => {
     const degrees = dayTemp.temp;
     const feelDegrees = dayTemp.feels_like;
     const weatherType = dayTemp.weather[0].description;
-    const weatherIcon = 'http://openweathermap.org/img/wn/"+dayTemp.weather[0].icon+"@2x.png';
+    const weatherIcon = weather.current.weather[0].icon;
 
 
     return (
@@ -18,7 +18,7 @@ const DayWeather = ({weather}) => {
             <Text style={styles.headerText}>{today}</Text>
             <Text style={styles.headerText}>{degrees}</Text>
             <Text style={styles.headerText}>{feelDegrees}</Text>
-            <View><Image source={{ uri: weatherIcon }} style={styles.images} /></View>
+            <View><Image source={{ uri : `http://openweathermap.org/img/wn/${weatherIcon}@2x.png` }} style={styles.icon} /></View>
             <Text style={styles.headerText}>{weatherType}</Text>
             </SafeAreaView>
         </SafeAreaView>
@@ -66,9 +66,10 @@ const styles = StyleSheet.create({
       fontWeight: 'bold',
     },
 
-    image: {
-        position: 'absolute',
-      }
+    icon: {
+      width: 150,
+      height: 90,
+    }
   
   });
   
